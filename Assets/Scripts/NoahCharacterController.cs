@@ -15,9 +15,13 @@ public class NoahCharacterController : MonoBehaviour
     public float DistanceToGround;
     public Transform CameraTransform;
 
+    public float MaximumDistance = 5;
+    
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         DistanceToGround = PlayerCollider.bounds.extents.y;
     }
 
@@ -78,6 +82,12 @@ public class NoahCharacterController : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, 100))
             {
+                float distance = Vector3.Distance(hit.transform.position, gameObject.transform.position);
+                if (distance < MaximumDistance)
+                {
+                    Destroy(hit.transform.gameObject);
+                }
+                
                 Debug.DrawLine(ray.origin, hit.point, Color.red);
             }
         }
