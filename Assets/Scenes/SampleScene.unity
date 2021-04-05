@@ -216,6 +216,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -283,12 +284,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MouseX: 0
   MouseY: 0
-  JumpSpeed: 6
+  JumpSpeed: 10
   Speed: 1
   PlayerRigidbody: {fileID: 495521781}
   PlayerCollider: {fileID: 495521776}
   DistanceToGround: 1
   CameraTransform: {fileID: 963194228}
+  MaximumDistance: 5
 --- !u!54 &495521781
 Rigidbody:
   m_ObjectHideFlags: 0
