@@ -85,7 +85,11 @@ public class NoahCharacterController : MonoBehaviour
                 float distance = Vector3.Distance(hit.transform.position, gameObject.transform.position);
                 if (distance < MaximumDistance)
                 {
-                    Destroy(hit.transform.gameObject);
+                    Block foundBlock = GetComponent<Block>();
+                    if (foundBlock != null)
+                    {
+                        
+                    }
                 }
                 
                 Debug.DrawLine(ray.origin, hit.point, Color.red);

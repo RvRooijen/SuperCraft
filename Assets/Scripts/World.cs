@@ -18,7 +18,8 @@ public class World : MonoBehaviour
         {
             for (int z = 0; z < WorldZ; z++)
             {
-                GameObject.Instantiate(ZandPrefab, new Vector3(x - WorldX/2, 0, z - WorldZ/2), Quaternion.identity);
+                GameObject newBlock = GameObject.Instantiate(ZandPrefab, new Vector3(x - WorldX/2, 0, z - WorldZ/2), Quaternion.identity);
+                newBlock.AddComponent<Block>();
             }
         }
     }
