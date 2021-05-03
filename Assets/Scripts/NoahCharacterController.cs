@@ -76,19 +76,27 @@ public class NoahCharacterController : MonoBehaviour
 
     void Hakken()
     {
+        // Als je linker muisknop drukt
         if (Input.GetMouseButton(0))
         {
+            // Maak een ray van de camera tot de muis
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
+            // Schiet de laser de wereld in
+            // Ray is de laser, hit is wat we raken, 100 is de afstand
             if (Physics.Raycast(ray, out hit, 100))
             {
+                // Pak de afstand tussen onszelf en het blokje
                 float distance = Vector3.Distance(hit.transform.position, gameObject.transform.position);
                 if (distance < MaximumDistance)
                 {
-                    Block foundBlock = GetComponent<Block>();
+                    // Een component is een script wat op een object zit en we mogen alle variabelen veranderen
+                    // Pak het Block component van het object dat we raken met de laser
+                    // <> is om een class aan te geven
+                    Block foundBlock = hit.transform.GetComponent<Block>();
                     if (foundBlock != null)
                     {
-                        
+                        foundBlock.Damage();
                     }
                 }
                 
