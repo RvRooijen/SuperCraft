@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    public float Health = 500;
+    public float Health = 25;
 
     public void Damage()
     {
