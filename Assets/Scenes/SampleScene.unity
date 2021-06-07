@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 495521776}
   - component: {fileID: 495521781}
   - component: {fileID: 495521780}
+  - component: {fileID: 495521782}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -282,6 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5c19c17f54cfc043aacdd249fe7d719, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Inventory: {fileID: 495521782}
   MouseX: 0
   MouseY: 0
   JumpSpeed: 10
@@ -307,6 +309,55 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &495521782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495521775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb43414f7466c442adc4d37eae96b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Getallen:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!850595691 &556374262
 LightingSettings:
   m_ObjectHideFlags: 0
