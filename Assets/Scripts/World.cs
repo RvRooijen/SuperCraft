@@ -13,13 +13,12 @@ public class World : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //GameObject.Instantiate(ZandPrefab, new Vector3(), Quaternion.identity);
         for (int x = 0; x < WorldX; x++)
         {
             for (int z = 0; z < WorldZ; z++)
             {
+                //GameObject.Instantiate maakt een nieuw object aan
                 GameObject newBlock = GameObject.Instantiate(ZandPrefab, new Vector3(x - WorldX/2, 0, z - WorldZ/2), Quaternion.identity);
-                newBlock.AddComponent<Block>();
             }
         }
     }
