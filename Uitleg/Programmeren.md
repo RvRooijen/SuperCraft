@@ -1,9 +1,9 @@
-#Waarom public of private
+# Waarom public of private
 
 public int Leeftijd = 8; // Andere classes mogen hier bij  
 private int leeftijd = 8; // Hier mogen andere classes niet bij
 
-#Classes
+# Classes
 
 Objecten in onze wereld ( poppetjes, blokjes en obstakels )
 
@@ -14,7 +14,7 @@ public class Poppetje
 }
 ```
 
-#Functions
+# Functions
 Wat is een function
 Wat de class allemaal kan doen ( Het poppetje loopt of schiet )
 
@@ -42,7 +42,7 @@ public class Blokje
 }
 ```
 
-#Variables
+# Variables
 Wat is een variable
 In een variale bewaren we informatie
 
@@ -55,7 +55,7 @@ Bool - ja of nee
 String - namen/letters  
 ```
 
-Variables aanpassen
+# Variables aanpassen
 
 ```csharp
 public int Leeftijd = 1;
@@ -73,7 +73,7 @@ Leeftijd++;
 Leeftijd += 5; // De leeftijd gaat met 5 omhoog en is dus 6
 ```
 
-#Als dan
+# Als dan
 Vergelijken van variables
 
 ```csharp
