@@ -40,6 +40,7 @@ public class CharacterController : MonoBehaviour
 
     void Bewegen()
     {
+        // Pak de beweging van de muis en sla het op in de MouseX variable
         MouseX = Input.GetAxis("Mouse X");
         MouseY = Input.GetAxis("Mouse Y");
 
