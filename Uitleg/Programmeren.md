@@ -58,7 +58,9 @@ Public variables schrijven we met een hoofdletter aan het begin.
 5. Vul de waarde in van de variable bijvoorbeeld "Hallo"
 6. Sluit de regel af met ;
 
+```csharp
 public string Naam = "Hallo";
+```
 
 Wat voor type variables zijn er
 
