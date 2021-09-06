@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    public enum BlockTypes
-    {
-        Sand,
-        Dirt,
-        Stone,
-        Wood,
-    }
-
-    public BlockTypes BlockType;
+    public BlockData BlockData;
     public float Health = 25;
 
     public void Damage(CharacterController characterController)
@@ -24,6 +16,7 @@ public class Block : MonoBehaviour
 
         if (Health == 0)
         {
+            characterController.Inventory.Add(BlockData);
             Destroy(gameObject);
         }
     }
