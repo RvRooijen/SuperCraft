@@ -87,6 +87,18 @@ if (Leeftijd > 8)
     // Als de leeftijd hoger is dan 8 komt de code hier
 }
 
-// == is gelijk aan
-// != is niet gelijk aan
+if (Leeftijd < 8)
+{
+    // Als de leeftijd lager is dan 8 komt de code hier
+}
+
+if (Leeftijd == 8)
+{
+    // Als de leeftijd gelijk is aan 8 komt de code hier
+}
+
+if (Leeftijd != 8)
+{
+    // Als de leeftijd niet gelijk is aan 8 komt de code hier
+}
 ```
