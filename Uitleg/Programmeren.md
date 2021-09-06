@@ -46,13 +46,27 @@ public class Blokje
 Wat is een variable
 In een variale bewaren we informatie
 
+Private variables schrijven we met een kleine letter aan het begin.
+Public variables schrijven we met een hoofdletter aan het begin.
+
+### Hoe maken we een nieuwe variable
+
+1. public of private
+2. Type van de variable bijvoorbeeld een string of een Poppetje
+3. De naam van de nieuwe variable
+4. Als we er een waarde aan willen geven kunnen we dit doen met =
+5. Vul de waarde in van de variable bijvoorbeeld "Hallo"
+6. Sluit de regel af met ;
+
+public string Naam = "Hallo";
+
 Wat voor type variables zijn er
 
 ```csharp
 Float - getallen met komma  
 Int - volledige getallen  
 Bool - ja of nee  
-String - namen/letters  
+String - namen/letters, om de text zetten we een "" teken heen. Bijvoorbeeld "Hallo"
 ```
 
 # Variables aanpassen
@@ -81,6 +95,8 @@ if(//Hier komt de vergelijking)
 {
     // Hier komt de code als de vergelijking waar is
 }
+
+private int leeftijd = 8;
 
 if (Leeftijd > 8)
 {
